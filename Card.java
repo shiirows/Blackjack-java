@@ -1,4 +1,4 @@
-package com.wildcodeschool;
+
 
 public class Card {
 	

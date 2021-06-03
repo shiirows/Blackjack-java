@@ -1,22 +1,11 @@
-package com.wildcodeschool;
-
 import java.util.Scanner;
 
-import javax.swing.JFrame;
-
-public class BlackJack extends JFrame {
+public class BlackJack {
 	
 	
-	private static final long serialVersionUID = 6094889031438363682L;
-	
-	public BlackJack() {
-		super("my first swing application");
-		this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-	}
 
 	public static void main (String[] args) {
-		BlackJack blackJack = new BlackJack();
-		blackJack.setVisible(true);
+		
 	
 	
 	 Deck playingDeck = new Deck();
@@ -37,8 +26,9 @@ public class BlackJack extends JFrame {
 			//take the players bet
 			System.out.println("tu a $" + playerMoney + ", combien voudriez-vous parier?");
 			double playerBet = userInput.nextDouble();
-			while (playerBet >  playerMoney) {
-				System.out.println("vous ne pouvez pas parier plus que ce que vous avez. s'il vous plaît, partez." );
+			while (playerBet > playerMoney) {
+				
+				System.out.println("vous ne pouvez pas parier plus que ce que vous avez. s'il vous plaÃ®t, partez." );
 				System.out.println("tu a $" + playerMoney + ", combien voudriez-vous parier?");
 				 playerBet = userInput.nextDouble();
 				 
@@ -59,7 +49,7 @@ public class BlackJack extends JFrame {
 			while(true) {
 				System.out.println("ta main:");
 				System.out.println(playerDeck.toString());
-				System.out.println("votre deck est évalué à : " + playerDeck.cardsValue());
+				System.out.println("votre deck est Ã©valuÃ© Ã  : " + playerDeck.cardsValue());
 				
 				//display Dealer Hand
 				System.out.println("main du Croupier : " + dealerDeck.getCard(0).toString() + " and [hidden]");
@@ -106,7 +96,7 @@ public class BlackJack extends JFrame {
 			//Display Total Value for Dealer
 			System.out.println("La main du croupier vaut : " + dealerDeck.cardsValue());
 			if((dealerDeck.cardsValue() > 21)&& endRound == false) {
-				System.out.println("défaite de croupier! Vous gagnez.");
+				System.out.println("dÃ©faite de croupier! Vous gagnez.");
 				playerMoney += playerBet;
 				endRound = true;
 			}
@@ -129,14 +119,31 @@ public class BlackJack extends JFrame {
 			
 			
 			
+		if(playerMoney == 0) {
+			System.out.println("jeu terminÃ©! tu es a cours d'argent. :(" );
+		System.out.println("veux tu rejouer (1)  sinon (2)");
+			int response = userInput.nextInt();
+		if(response == 1) {
+			System.out.println("nouvelle partie !");
+			playerMoney	+= 100.00;
+			}
+		if(response == 2) {
+			System.out.println("a la prochaine !");
+			System.exit(0);
+			
+		}
+		}
+		
 			
 			
 
-		}
-		
-		System.out.println("jeu terminé! tu es a cours d'argent. :(" );
 		
 		
 		
-}
-}
+	
+	
+	
+		
+	}
+	}
+	}

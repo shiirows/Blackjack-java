@@ -1,4 +1,4 @@
-package com.wildcodeschool;
+
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -98,19 +98,19 @@ public class Deck {
 		
 		for(Card aCard : this.cards) {
 			switch(aCard.getValue()) {
-			case Two: totalValue += 2; break;
-			case Three: totalValue += 3; break;
-			case Four: totalValue += 4; break;
-			case Five: totalValue += 5; break;
-			case Six: totalValue += 6; break;
-			case Seven: totalValue += 7; break;
-			case Eight: totalValue += 8; break;
-			case Nine: totalValue += 9; break;
-			case Ten: totalValue += 10; break;
-			case Jack: totalValue += 10; break;
-			case King: totalValue += 10; break;
-			case Queen: totalValue += 10; break;
-			case Ace: aces += 1; break;
+				case deux: totalValue += 2; break;
+				case trois: totalValue += 3; break;
+				case quatre: totalValue += 4; break;
+				case cinque: totalValue += 5; break;
+				case six: totalValue += 6; break;
+				case sept: totalValue += 7; break;
+				case huit: totalValue += 8; break;
+				case neuf: totalValue += 9; break;
+				case dix: totalValue += 10; break;
+				case Jack: totalValue += 10; break;
+				case King: totalValue += 10; break;
+				case Queen: totalValue += 10; break;
+				case Ace: aces += 1; break;
 			}
 		}
 		

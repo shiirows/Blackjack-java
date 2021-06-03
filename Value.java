@@ -1,6 +1,5 @@
-package com.wildcodeschool;
 
 public enum Value {
- Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, King, Queen, Ace;
+    deux, trois, quatre, cinque, six, sept, huit, neuf, dix, Jack, King, Queen, Ace;
  
 }

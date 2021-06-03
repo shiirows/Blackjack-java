@@ -1,7 +1,7 @@
-package com.wildcodeschool;
+
 
 public enum Suit {
 
-	Pique, Coeur, Carreau, Trèfle;
+	Pique, Coeur, Carreau, Trefle;
 	
 }
